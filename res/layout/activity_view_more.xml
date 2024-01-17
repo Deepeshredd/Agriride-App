@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".User.ViewMore">
+
+
+    <ImageView
+        android:id="@+id/viewimg"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/borader1"
+        android:padding="10dp"
+        android:src="@drawable/logo"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+
+        >
+
+
+
+            <TextView
+                android:id="@+id/tvfname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="name"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                />
+
+
+            <TextView
+                android:id="@+id/tvdesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="city"
+                android:gravity="center"
+                android:textStyle="italic"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                />
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <Spinner
+        android:id="@+id/sppinertime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"/>
+
+
+    <TextView
+        android:id="@+id/tvcost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:gravity="center"/>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColorHint="@color/purple_200"
+        app:boxStrokeColor="@color/purple_200"
+        app:counterOverflowTextColor="@color/black"
+        app:hintTextColor="@color/purple_200">
+
+        <EditText
+            android:id="@+id/etdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Date"
+            android:layout_margin="10dp"
+
+            android:padding="10dp"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColorHint="@color/purple_200"
+        app:boxStrokeColor="@color/purple_200"
+        app:counterOverflowTextColor="@color/black"
+        app:hintTextColor="@color/purple_200">
+
+        <EditText
+            android:id="@+id/etdes"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Description"
+            android:padding="10dp"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+    <Button
+        android:id="@+id/btnbook"
+        style="@style/Button"
+        android:text="Book"
+        android:textSize="20sp"
+        />
+
+</LinearLayout>

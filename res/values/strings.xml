@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AGRIRIDE APP</string>
+    <string name="not_registered_yet"><u><i>Not Registered yet ?</i></u></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Changed_language" >Change Language</string>
+    <string name="signup">Signup</string>
+    <string name="Profile">profile\n</string>
+    <string name="Update">update</string>
+    <string name="name">Plow the Earth, Sow the Future</string>
+
+
+</resources>

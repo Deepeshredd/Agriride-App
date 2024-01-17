@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".User.Userhome">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"
+            android:layout_margin="10dp"/>
+
+
+
+        <TextView
+            android:id="@+id/tvname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="#090909"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp"
+            />
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:id="@+id/linearviewdriver"
+                    android:background="@drawable/borader1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:layout_margin="10dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="75dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/mechanic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Drivers"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:textSize="15sp"
+                        android:textColor="@color/purple_500"/>
+
+                </LinearLayout>
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:background="@drawable/borader1"
+                    android:id="@+id/linearhistory"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/history"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="History"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:textSize="15sp"
+                        android:textColor="@color/purple_500"/>
+
+                </LinearLayout>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

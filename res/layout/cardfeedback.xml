@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardElevation="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/baseline_star_border_purple500_24"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Feedback"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textAllCaps="true"
+            android:textSize="25sp"
+            android:textColor="@color/black"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:textColorHint="@color/purple_200"
+            app:boxStrokeColor="@color/purple_200"
+            app:counterOverflowTextColor="@color/black"
+            app:hintTextColor="@color/purple_200"
+            android:hint="Enter your Feedback"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etfeedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:inputType="text"
+                android:textColor="@color/black"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/btnsubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/btn1"
+            android:backgroundTint="@color/purple_500"
+            android:text="Submit" />
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
